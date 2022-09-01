@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Radio+Canada:wght@300&family=Roboto:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: roboto;
+}
+
+.logo h4 {
+    font-size: 2rem;
+    color: #4073de;
+}
+
+.flexNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flexNav ul {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+
+.flexNav ul li {
+    list-style: none;
+    height: 80px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexNav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.flexNav ul li:hover a {
+    color: white;
+}
+
+.flexNav ul li:hover {
+    background: linear-gradient(#ba5cff, #155ed1);
+}
+
+.active {
+    background: linear-gradient(#ba5cff, #155ed1);
+}
+
+.aActive {
+    color: white !important;
+}
+
+main {
+    height: 100vh;
+    background-image: url(images/main.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.fordivFlex {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 300px));
+    grid-template-rows: repeat(1, 300px);
+    justify-content: space-evenly;
+    grid-gap: 15px;
+}
+
+.divitem:nth-of-type(1) {
+    background: linear-gradient(#ffaf00, #ff8615);
+}
+
+.divitem:nth-of-type(2) {
+    background: linear-gradient(#ba5cff, #155ed1)
+}
+
+.divitem:nth-of-type(3) {
+    background: linear-gradient(#ff3050, #ff1c98)
+}
+
+.divitem:nth-of-type(4) {
+    background: linear-gradient(#ff14e7, #b61fe0)
+}
+
+.divitem {
+    position: relative;
+    top: -130px;
+    color: white;
+    padding: 20px;
+}
+
+h3 {
+    font-size: clamp(1rem, 3vw, 2.7rem);
+}
+
+.divitem p::after {
+    content: url(images/sign.png);
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+    font-size: 1rem;
+}
+
+p {
+    margin-top: 20px;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+
+.sixBox .sixBoxGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 800px));
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 20px 10px;
+    justify-content: space-evenly;
+}
+
+.sixBox .sixBoxGrid div:nth-of-type(5) {
+    grid-column: 1/3;
+}
+
+.sixBox .sixBoxGrid div:nth-of-type(1) {
+    background: #f2f0f0;
+}
+
+.sixBox .sixBoxGrid div:nth-of-type(4) {
+    background: #f2f0f0;
+}
+
+.sixBox .sixBoxGrid div img {
+    width: 100%;
+    height: 100%;
+}
+
+.sixBox .sixBoxGrid button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    margin-top: 25px;
+    background: linear-gradient(to right, #ffaf00, #ff8615);
+}
+
+.fiveBox {
+    position: relative;
+}
+
+.subimage {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.sixBox .sixBoxGrid div.firstBox,
+div.fourthtBox,
+div.sevenBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 25px;
+}
+
+.sevenBox {
+    background: linear-gradient(to bottom, #ffaf00, #ff8615);
+    color: white
+}
+
+.sevenBox dl dd {
+    margin-top: 20px;
+    position: relative;
+    left: 60px;
+    display: flex;
+    align-items: center
+}
+
+.sevenBox dl dd::before {
+    content: url(images/roundsign.png);
+    position: absolute;
+    left: -35px;
+}
+
+.sixBox .sixBoxGrid .subFiveBox {
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(#ff3050, #ff1c98) !important;
+    margin-left: 30px;
+    padding: 30px;
+    position: relative;
+    opacity: 0.8;
+    color: white;
+}
+
+.fourBoxFeedback {
+    margin: 100px;
+}
+
+.fourFeedbackGrid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 300px));
+    grid-template-rows: repeat(1, 300px);
+    grid-gap: 10px;
+    justify-content: space-evenly;
+}
+
+.fourFeedbackGrid div {
+    position: relative;
+    background: #f2f0f0;
+    color: #4a4949;
+}
+
+.fourBoxFeedback .fourFeedbackGrid .smallRoundImage {
+    width: 50%;
+    position: absolute;
+    border-radius: 50%;
+    left: 25%;
+    top: -60px;
+}
+
+.fourBoxFeedback .fourFeedbackGrid .feedbackP {
+    margin-top: 35%;
+    padding: 0 15px;
+}
+
+.UserNamesFeedback {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    padding-left: 15px;
+    color: darkorange;
+}
+
+.contactTwoBox .contactGridBox {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 800px));
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 10px;
+    justify-content: space-evenly;
+}
+
+.contactTwoBox .contactGridBox > div {
+    background: linear-gradient(#0099e1, #007cc7);
+    color: white;
+}
+
+.oneBox img {
+    width: 100%;
+    height: 100%;
+}
+
+.oneBox {
+    position: relative;
+}
+
+.oneBox .contactInfo {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+.number {
+    margin-top: 20px
+}
+
+.socialIcon {
+    display: flex;
+    justify-content: ;
+    gap: 10px;
+}
+
+.socialIcon img {
+    width: 35px;
+    background: ;
+    margin-top: 20px;
+}
+
+.socialIcon .facebookicon {
+    width: 20px;
+}
+
+.socialIcon .iWhatsapp {
+    width: 65px;
+    margin-left: -25px;
+}
+
+.socialIcon .iTwitter {
+    width: 40px;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10px;
+    background-image:url(images/svgBg.svg);
+}
+
+.fa-square-xmark {
+    display: none;
+}
+
+#openNav {
+    display: none;
+}
+
+/*Mobile reponsive start here ###################################*/
+
+@media(max-width:900px) {
+    nav {
+        position: relative;
+        height: 80px;
+    }
+
+    nav .flexNav {
+        position: absolute;
+        left: 0;
+        top: 0px;
+        align-items: center;
+        height: 100%;
+    }
+
+    .logo {
+
+        margin-left: 50px;
+    }
+
+    nav .flexNav ul {
+        width: 0px;
+        height: 100vh;
+        position: absolute;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 20px;
+        left: 0;
+        top: 0;
+        z-index: 999;
+        background: white;
+        padding: 0px;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s ease;
+
+    }
+
+    .fa-square-xmark {
+        margin-left: 70px;
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: dodgerblue;
+        display: inline-block;
+    }
+
+    #openNav {
+        font-size: 1.5rem;
+        cursor: pointer;
+        display: inline-block
+    }
+
+    .flexNav ul li {
+        list-style: none;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-left: 15px;
+
+    }
+
+    .active {
+        background: none;
+    }
+
+    .aActive {
+        color: black !important;
+    }
+
+    .flexNav ul li:hover {
+        background: none;
+    }
+
+    .flexNav ul li:hover a {
+
+        color: black;
+    }
+
+    .fordivFlex {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 300px));
+        grid-template-rows: repeat(2, auto);
+        justify-content: space-evenly;
+    }
+
+    h3 {
+        font-size: clamp(2rem, 5.5vw, 5rem);
+    }
+
+    .sixBox .sixBoxGrid {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(300px, 800px));
+        grid-template-rows: repeat(7, 1fr);
+        grid-gap: 20px 10px;
+        justify-content: space-evenly;
+    }
+
+    .sixBox .sixBoxGrid div:nth-of-type(5) {
+        grid-column: 1;
+    }
+
+    .fourFeedbackGrid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(210px, 300px));
+        grid-template-rows: repeat(2, 300px);
+        grid-gap: 100px 20px;
+        justify-content: space-evenly;
+    }
+
+    .contactTwoBox .contactGridBox {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(300px, 800px));
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 10px;
+        justify-content: space-evenly;
+    }
+
+}
+
+@media(max-width:600px) {
+
+    .fordivFlex {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(200px, 350px));
+        grid-template-rows: repeat(4, 250px);
+        justify-content: center;
+    }
+
+    h3 {
+        font-size: clamp(2rem, 4vw, 5rem);
+    }
+
+    .divitem {
+        background: gray;
+        text-align: center;
+
+    }
+
+}
+
+@media(max-width:400px) {
+
+    .fourFeedbackGrid {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(210px, 300px));
+        grid-template-rows: repeat(4, 300px);
+        grid-gap: 100px 0px;
+        justify-content: center;
+    }
+
+    .fourBoxFeedback {
+        margin: 100px 0;
+    }
+
+}
+
+
+
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
